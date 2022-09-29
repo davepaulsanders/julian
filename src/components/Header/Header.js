@@ -2,37 +2,46 @@ import React from "react";
 import "./Header.css";
 
 export const Header = () => {
+  const openMenuAnimation = () => {
+    document.querySelector(".bar-top").style.transform = "rotate(45deg)";
+    document.querySelector(".bar-middle").style.transform = "translateX(1rem)";
+    document.querySelector(".bar-middle").style.opacity = "0";
+    document.querySelector(".bar-bottom").style.transform = "rotate(-45deg)";
+  };
+
+  const closeMenuAnimation = () => {
+    document.querySelector(".bar-top").style.transform = "";
+    document.querySelector(".bar-middle").style.transform = "";
+    document.querySelector(".bar-middle").style.opacity = "";
+    document.querySelector(".bar-bottom").style.transform = "";
+  };
+
+  // toggle nav menu in mobile
   const toggleMenu = (e) => {
     e.preventDefault();
-    if (document.querySelector(".link-container").classList.contains("open")) {
-      console.log("here");
-      document.querySelector(".link-container").classList.remove("open");
-      document.querySelector(".bar-top").style.transform = "";
-      document.querySelector(".bar-middle").style.transform = "";
-      document.querySelector(".bar-middle").style.opacity = "";
-      document.querySelector(".bar-bottom").style.transform = "";
+    // query selector for nav links container
+    const linkContainer = document.querySelector(".link-container");
+    if (linkContainer.classList.contains("open")) {
+      closeMenuAnimation();
+      linkContainer.classList.remove("open");
     } else {
-      document.querySelector(".link-container").classList.add("nav-transition");
-      document.querySelector(".link-container").classList.add("open");
-      document.querySelector(".bar-top").style.transform = "rotate(45deg)";
-      document.querySelector(".bar-middle").style.transform =
-        "translateX(1rem)";
-      document.querySelector(".bar-middle").style.opacity = "0";
-      document.querySelector(".bar-bottom").style.transform = "rotate(-45deg)";
+      openMenuAnimation();
+      linkContainer.classList.add("nav-transition");
+      linkContainer.classList.add("open");
     }
   };
 
   window.addEventListener("resize", () => {
-    if (document.querySelector(".link-container").classList.contains("open")) {
-      document.querySelector(".link-container").classList.remove("open");
+    // query selector for nav links container
+    const linkContainer = document.querySelector(".link-container");
+    if (linkContainer.classList.contains("open")) {
+      linkContainer.classList.remove("open");
       document.querySelector(".bar-top").style.transform = "";
       document.querySelector(".bar-middle").style.transform = "";
       document.querySelector(".bar-middle").style.opacity = "";
       document.querySelector(".bar-bottom").style.transform = "";
     }
-    document
-      .querySelector(".link-container")
-      .classList.remove("nav-transition");
+    linkContainer.classList.remove("nav-transition");
   });
 
   return (
