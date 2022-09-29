@@ -1,7 +1,6 @@
 import React from "react";
 import "./Header.css";
 
-
 export const Header = () => {
   const toggleMenu = (e) => {
     e.preventDefault();
@@ -13,6 +12,7 @@ export const Header = () => {
       document.querySelector(".bar-middle").style.opacity = "";
       document.querySelector(".bar-bottom").style.transform = "";
     } else {
+      document.querySelector(".link-container").classList.add("nav-transition");
       document.querySelector(".link-container").classList.add("open");
       document.querySelector(".bar-top").style.transform = "rotate(45deg)";
       document.querySelector(".bar-middle").style.transform =
@@ -21,6 +21,20 @@ export const Header = () => {
       document.querySelector(".bar-bottom").style.transform = "rotate(-45deg)";
     }
   };
+
+  window.addEventListener("resize", () => {
+    if (document.querySelector(".link-container").classList.contains("open")) {
+      document.querySelector(".link-container").classList.remove("open");
+      document.querySelector(".bar-top").style.transform = "";
+      document.querySelector(".bar-middle").style.transform = "";
+      document.querySelector(".bar-middle").style.opacity = "";
+      document.querySelector(".bar-bottom").style.transform = "";
+    }
+    document
+      .querySelector(".link-container")
+      .classList.remove("nav-transition");
+  });
+
   return (
     <div>
       <nav className="bg-transparent flex justify-between">

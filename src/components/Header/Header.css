@@ -4,9 +4,12 @@
     top: 0;
     right: 0;
     margin-right: 0;
-    transition: left 0.5s ease-in-out;
     background-color: black;
     padding: 2rem 0;
+}
+
+.nav-transition {
+  transition: left 0.5s ease-in-out;
 }
 ul {
   flex-direction: column;
