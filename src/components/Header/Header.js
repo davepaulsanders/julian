@@ -1,18 +1,36 @@
 import React from "react";
 import "./Header.css";
+
+
 export const Header = () => {
-
-
+  const toggleMenu = (e) => {
+    e.preventDefault();
+    if (document.querySelector(".link-container").classList.contains("open")) {
+      console.log("here");
+      document.querySelector(".link-container").classList.remove("open");
+      document.querySelector(".bar-top").style.transform = "";
+      document.querySelector(".bar-middle").style.transform = "";
+      document.querySelector(".bar-middle").style.opacity = "";
+      document.querySelector(".bar-bottom").style.transform = "";
+    } else {
+      document.querySelector(".link-container").classList.add("open");
+      document.querySelector(".bar-top").style.transform = "rotate(45deg)";
+      document.querySelector(".bar-middle").style.transform =
+        "translateX(1rem)";
+      document.querySelector(".bar-middle").style.opacity = "0";
+      document.querySelector(".bar-bottom").style.transform = "rotate(-45deg)";
+    }
+  };
   return (
     <div>
       <nav className="bg-transparent flex justify-between">
-        <h1 className="title text-white text-xl xl:text-5xl 2xl:text-6xl ml-5 lg:ml-14 mt-6">
+        <h1 className="title text-white text-3xl xl:text-5xl 2xl:text-6xl ml-5 lg:ml-14 mt-6">
           <a href="/">JULIAN BERKOWITZ</a>
         </h1>
-        <div class="hamburger-menu">
-          <div class="bar-top"></div>
-          <div class="bar-middle"></div>
-          <div class="bar-bottom"></div>
+        <div className="hamburger-menu" onClick={toggleMenu}>
+          <div className="bar-top"></div>
+          <div className="bar-middle"></div>
+          <div className="bar-bottom"></div>
         </div>
         <div className="mr-10 mt-4 link-container">
           <ul className="text-white flex">
