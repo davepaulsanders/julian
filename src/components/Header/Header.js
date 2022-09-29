@@ -57,7 +57,7 @@ export const Header = () => {
         </div>
         <div className="mr-10 mt-4 link-container">
           <ul className="text-white flex">
-            <a className="link" href="/bio">
+            <a className="link" href="#bio">
               <li>BIO</li>
             </a>
             <a className="link" href="/bio">

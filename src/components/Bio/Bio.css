@@ -1,0 +1,13 @@
+.bioImage {
+    width: 500px;
+    float: left;
+    margin-right: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.bioPara {
+    text-align: left;
+    font-size: 1rem;
+    letter-spacing: 2px;
+    line-height: 1.7;
+}
