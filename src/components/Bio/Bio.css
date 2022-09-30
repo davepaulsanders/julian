@@ -6,8 +6,8 @@
     padding: 1rem;
     text-align: left;
     font-size: 1rem;
-    letter-spacing: 2px;
-    line-height: 2;
+    letter-spacing: 1;
+    line-height: 2.15;
 }
 .bioPara:first-of-type {
     margin-top: 1rem;
@@ -16,8 +16,12 @@
 
 @media only screen and (min-width: 700px) {
     
-    .bioImage2 {
-        position: relative;
+    .bioImage, .bioImage2, .bioImage3 {
+        margin: 1rem 0;
+    }
+    .bioPara {
+        padding: 0;
+        letter-spacing: 0.5px; 
     }
     .bioPara:first-of-type {
         margin-top: 0;

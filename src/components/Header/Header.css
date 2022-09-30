@@ -1,3 +1,10 @@
+.title {
+  font-family: "Fjalla One";
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  margin-left: 0.75rem;
+}
 .link-container {
     position: absolute;
     left: 100%;
@@ -20,7 +27,7 @@ ul {
 }
 .link {
     margin: 1rem;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-weight: 700;
     font-size: 1.25rem;
     transition: opacity 0.3s ease-in-out;
@@ -56,13 +63,18 @@ ul {
 
 
   @media only screen and (min-width: 1000px) {
+
+    .title {
+        margin-top: 0;
+        margin-left: 4rem;
+    }
     .link-container {
         position: relative;
         left: 0;
         display: block;
-        top: -10px;
         background-color: transparent;
-        padding: 1rem 1rem;
+        margin-right: 2rem;
+        
     }
     
     .hamburger-menu {
@@ -70,6 +82,11 @@ ul {
     }
     ul {
       flex-direction: row;
+    }
+
+    li {
+      height: 2rem;
+      
     }
 
   }

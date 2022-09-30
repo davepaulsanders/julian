@@ -66,7 +66,7 @@ export const Bio = () => {
             Jojo, and 49 West. He’s also performed at festivals such as the DC
             Jazz Festival and the West Virginia Jazz & Wine Festival.
           </p>
-          <img src={bio3} alt="Julian Berkowitz" />
+          <img className="bioImage3" src={bio3} alt="Julian Berkowitz" />
           
         </div>
       </div>

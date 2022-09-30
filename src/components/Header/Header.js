@@ -46,8 +46,8 @@ export const Header = () => {
 
   return (
     <div>
-      <nav className="bg-transparent flex justify-between">
-        <h1 className="title overflow-hidden bg-transparent text-white text-3xl xl:text-5xl 2xl:text-6xl ml-5 lg:ml-14 pt-6">
+      <nav className="bg-transparent flex justify-between items-center">
+        <h1 className="title overflow-hidden bg-transparent text-white text-3xl xl:text-5xl 2xl:text-6xl lg:ml-14">
           <a href="/" >JULIAN BERKOWITZ</a>
         </h1>
         <div className="hamburger-menu" onClick={toggleMenu}>
@@ -55,10 +55,10 @@ export const Header = () => {
           <div className="bar-middle"></div>
           <div className="bar-bottom"></div>
         </div>
-        <div className="mr-10 pt-4 link-container">
+        <div className="mr-10 link-container flex items-center">
           <ul className="text-white flex">
             <a className="link" href="#bio">
-              <li>BIO</li>
+              <li className="">BIO</li>
             </a>
             <a className="link" href="/bio">
               <li>PHOTOS</li>
