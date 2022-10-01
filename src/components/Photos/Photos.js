@@ -11,7 +11,7 @@ export const Photos = () => {
   return (
     <div className="bg-gray-500 py-10 flex flex-col items-center">
     <h2 className="photos-title text-6xl mb-10">PHOTOS</h2>
-      <div className="grid md:grid-cols-8 lg:grid-cols-12 w-full md:w-11/12 lg:w-3/4 gap-1 md:gap-2 md:grid-rows-3 lg:grid-rows-2">
+      <div className="grid md:grid-cols-8 lg:grid-cols-12 w-full md:w-11/12 xl:w-3/4 gap-1 md:gap-2 md:grid-rows-3 lg:grid-rows-2">
         <img
           className="col-start-1 md:col-end-5 lg:col-end-5"
           src={photos1}

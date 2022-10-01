@@ -36,7 +36,7 @@ export const Bio = () => {
             tours and accompanied smooth Latin jazz artist Debora Galan on her
             2019 East Coast tour.
           </p>
-          <p className="bioPara ">
+          <p className="bioPara">
             As a bandleader, Julian frequently leads his own groups in trio,
             quartet, and quintet configurations at various music venues in the
             DMV area. Currently, Julian has a weekly Friday night residency with
