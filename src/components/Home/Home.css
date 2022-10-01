@@ -1,3 +1,13 @@
 .home {
-    
+    height: 100vh;
+}
+
+.video {
+    width: 300px;
+}
+
+@media only screen and (min-width: 1400px) {
+    .video {
+        width: 400px;
+    }
 }
