@@ -55,7 +55,7 @@ export const Header = () => {
           <div className="bar-middle"></div>
           <div className="bar-bottom"></div>
         </div>
-        <div className="mr-10 link-container flex items-center">
+        <div className="mr-10 link-container flex justify-center items-center">
           <ul className="text-white flex">
             <a className="link" href="#bio">
               <li className="">BIO</li>

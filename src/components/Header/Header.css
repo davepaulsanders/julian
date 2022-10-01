@@ -1,10 +1,11 @@
 .title {
-  font-family: "Fjalla One";
-  font-weight: 500;
+  font-family: "Sriracha";
+  font-weight: 400;
   letter-spacing: 1px;
   margin-top: 2rem;
   margin-left: 0.75rem;
 }
+
 .link-container {
     position: absolute;
     left: 100%;
@@ -20,6 +21,7 @@
 }
 ul {
   flex-direction: column;
+  
 }
 
 .open {
