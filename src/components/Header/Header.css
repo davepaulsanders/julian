@@ -8,12 +8,13 @@
 
 .link-container {
     position: absolute;
-    left: 100%;
+    left: 130%;
     top: 0;
     right: 0;
     margin-right: 0;
     background-color: black;
     padding: 2rem 0;
+    
 }
 
 .nav-transition {
@@ -33,6 +34,7 @@ ul {
     font-weight: 700;
     font-size: 1.25rem;
     transition: opacity 0.3s ease-in-out;
+    line-height: 2;
 }
 
 .link:hover {
@@ -78,7 +80,9 @@ ul {
         margin-right: 2rem;
         
     }
-    
+    .link {
+      line-height: 1;
+    }
     .hamburger-menu {
         display: none;
     }
