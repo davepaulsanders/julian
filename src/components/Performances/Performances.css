@@ -1,0 +1,34 @@
+.performances-title {
+    font-weight: 300;
+    font-family: "Kanit";
+}
+
+.event-box {
+    transition: max-height 1s ease-in-out;
+}
+
+.short-event {
+    max-height: 12.5rem;
+}
+.tall-event {
+    max-height: 40rem;
+}
+.event-description {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out 0.3s;
+    
+}
+
+.hidden-event {
+    opacity: 0;
+}
+
+.details-button {
+    z-index: 2;
+}
+
+@media only screen and (min-width: 400px) {
+    .short-event {
+        max-height: 10rem;
+    }
+}

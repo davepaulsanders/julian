@@ -2,6 +2,13 @@ import React from "react";
 import "./Header.css";
 
 export const Header = () => {
+  window.addEventListener("scroll", () => {
+    const linkContainer = document.querySelector(".link-container");
+    if (linkContainer.classList.contains("open")) {
+      linkContainer.classList.remove("open");
+      closeMenuAnimation();
+    }
+  });
   const openMenuAnimation = () => {
     document.querySelector(".bar-top").style.transform = "rotate(45deg)";
     document.querySelector(".bar-middle").style.transform = "translateX(1rem)";
@@ -48,7 +55,7 @@ export const Header = () => {
     <div>
       <nav className="bg-transparent flex justify-between items-center">
         <h1 className="title overflow-hidden bg-transparent text-white text-3xl xl:text-5xl 2xl:text-6xl lg:ml-14">
-          <a href="/" >JULIAN BERKOWITZ</a>
+          <a href="/">JULIAN BERKOWITZ</a>
         </h1>
         <div className="hamburger-menu" onClick={toggleMenu}>
           <div className="bar-top"></div>
@@ -60,13 +67,13 @@ export const Header = () => {
             <a className="link" href="#bio">
               <li className="">BIO</li>
             </a>
-            <a className="link" href="/bio">
+            <a className="link" href="#photos">
               <li>PHOTOS</li>
             </a>
             <a className="link" href="/bio">
               <li>VIDEOS</li>
             </a>
-            <a className="link" href="/bio">
+            <a className="link" href="#performances">
               <li>PERFORMANCES</li>
             </a>
             <a className="link" href="/bio">

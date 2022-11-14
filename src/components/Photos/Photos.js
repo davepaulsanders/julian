@@ -1,16 +1,16 @@
 import React from "react";
-import "./Photos.css"
-const photos1 = require("../../assets/photos1.jpg");
-const photos2 = require("../../assets/photos2.jpg");
-const photos3 = require("../../assets/photos3.png");
-const photos4 = require("../../assets/photos4.jpg");
-const photos5 = require("../../assets/photos5.jpg");
-const photos6 = require("../../assets/photos6.png");
+import "./Photos.css";
+const photos1 = require("../../assets/compressed/photos1.jpg");
+const photos2 = require("../../assets/compressed/photos2.jpg");
+const photos3 = require("../../assets/compressed/photos3.png");
+const photos4 = require("../../assets/compressed/photos4.jpg");
+const photos5 = require("../../assets/compressed/photos5.jpg");
+const photos6 = require("../../assets/compressed/photos6.png");
 
 export const Photos = () => {
   return (
-    <div className="bg-gray-500 py-10 flex flex-col items-center">
-    <h2 className="photos-title text-6xl mb-10">PHOTOS</h2>
+    <div id="photos" className="bg-gray-500 py-10 flex flex-col items-center">
+      <h2 className="photos-title text-4xl mb-5">PHOTOS</h2>
       <div className="grid md:grid-cols-8 lg:grid-cols-12 w-full md:w-11/12 xl:w-3/4 gap-1 md:gap-2 md:grid-rows-3 lg:grid-rows-2">
         <img
           className="col-start-1 md:col-end-5 lg:col-end-5"

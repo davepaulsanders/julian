@@ -7,7 +7,7 @@
 }
 
 .link-container {
-    position: absolute;
+    position: fixed;
     left: 130%;
     top: 0;
     right: 0;
