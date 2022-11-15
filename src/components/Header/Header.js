@@ -65,7 +65,7 @@ export const Header = () => {
         <div className="mr-10 link-container flex justify-center items-center">
           <ul className="text-white flex">
             <a className="link" href="#bio">
-              <li className="">BIO</li>
+              <li className="link">BIO</li>
             </a>
             <a className="link" href="#photos">
               <li>PHOTOS</li>
