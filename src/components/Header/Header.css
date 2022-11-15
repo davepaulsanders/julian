@@ -22,7 +22,6 @@
 }
 ul {
   flex-direction: column;
-  
 }
 
 .open {
@@ -40,7 +39,6 @@ ul {
 .link:hover {
     opacity: 0.5;
 }
-
 .hamburger-menu {
     position: absolute;
     right: 1px;
@@ -86,9 +84,7 @@ ul {
         margin-right: 2rem;
         
     }
-    .link {
-      line-height: 1;
-    }
+   
     .hamburger-menu {
         display: none;
     }
@@ -98,7 +94,7 @@ ul {
 
     li {
       height: 2rem;
-      
+
     }
 
   }

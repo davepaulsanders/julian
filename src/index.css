@@ -16,7 +16,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
  width: 100%;
  overflow-x: hidden!important;
- 
+ background-color: white;
+ color: black;
+}
+
+input, textarea {
+  background-color: white;
 }
 *::-webkit-scrollbar {
   width: 0.25rem;

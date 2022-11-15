@@ -1,10 +1,10 @@
 .performances-title::after {
-    content : "";
+  content : "";
   position : absolute;
-  width : 23rem;
+  width : 24rem;
   height : 11px;
   left: 0;
-  background-color: #a5a5a5;
+  background-color: #cbcbcb;
   bottom: 6px;
   z-index: -1;
 }
