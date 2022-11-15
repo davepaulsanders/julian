@@ -1,0 +1,14 @@
+.contact-title {
+    z-index: 2!important;
+}
+
+.contact-title::after {
+    content : "";
+  position : absolute;
+  width : 110%;
+  height : 11px;
+  left: 10px;
+  background-color: darkcyan;
+  z-index: -1;
+  bottom: 2.85rem;
+}

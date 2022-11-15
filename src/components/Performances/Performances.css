@@ -1,14 +1,22 @@
-.performances-title {
-    font-weight: 300;
-    font-family: "Kanit";
+.performances-title::after {
+    content : "";
+  position : absolute;
+  width : 23rem;
+  height : 11px;
+  left: 0;
+  background-color: #a5a5a5;
+  bottom: 6px;
+  z-index: -1;
 }
 
 .event-box {
     transition: max-height 1s ease-in-out;
+    
 }
 
 .short-event {
     max-height: 12.5rem;
+    min-height: 10.5rem;
 }
 .tall-event {
     max-height: 40rem;
@@ -29,6 +37,6 @@
 
 @media only screen and (min-width: 400px) {
     .short-event {
-        max-height: 10rem;
+        max-height: 10.5rem;
     }
 }

@@ -65,18 +65,18 @@ export const Header = () => {
         <div className="mr-10 link-container flex justify-center items-center">
           <ul className="text-white flex">
             <a className="link" href="#bio">
-              <li className="link">BIO</li>
+              <li>BIO</li>
             </a>
             <a className="link" href="#photos">
               <li>PHOTOS</li>
             </a>
-            <a className="link" href="/bio">
+            <a className="link" href="#videos">
               <li>VIDEOS</li>
             </a>
             <a className="link" href="#performances">
               <li>PERFORMANCES</li>
             </a>
-            <a className="link" href="/bio">
+            <a className="link" href="#contact">
               <li>CONTACT</li>
             </a>
           </ul>

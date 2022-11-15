@@ -9,9 +9,14 @@ const photos6 = require("../../assets/compressed/photos6.png");
 
 export const Photos = () => {
   return (
-    <div id="photos" className="bg-gray-500 py-10 flex flex-col items-center">
-      <h2 className="photos-title text-4xl mb-5">PHOTOS</h2>
-      <div className="grid md:grid-cols-8 lg:grid-cols-12 w-full md:w-11/12 xl:w-3/4 gap-1 md:gap-2 md:grid-rows-3 lg:grid-rows-2">
+    <div
+      id="photos"
+      className="w-full bg-slate-700 pt-6 md:pt-10 flex flex-col items-center"
+    >
+      <h2 className="w-1/12 self-start section-title photos-title relative left-4 md:left-[200px] text-slate-200 text-5xl mb-10">
+        PHOTOS
+      </h2>
+      <div className="grid md:grid-cols-8 lg:grid-cols-12 w-full md:w-11/12 xl:w-3/4 gap-1 md:gap-2 md:grid-rows-3 lg:grid-rows-2 md:pb-20">
         <img
           className="col-start-1 md:col-end-5 lg:col-end-5"
           src={photos1}

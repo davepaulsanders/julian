@@ -11,7 +11,7 @@ export const Bio = () => {
         {/* LEFT COLUMN */}
         <div>
           <p className="bioPara">
-            <span className="name-span text-2xl font-bold">
+            <span className="name-span text-2xl font-bold mr-1">
               Julian Berkowitz
             </span>{" "}
             is a drummer and educator residing in Washington, DC. Rooted in the
@@ -67,7 +67,6 @@ export const Bio = () => {
             Jazz Festival and the West Virginia Jazz & Wine Festival.
           </p>
           <img className="bioImage3" src={bio3} alt="Julian Berkowitz" />
-          
         </div>
       </div>
     </div>

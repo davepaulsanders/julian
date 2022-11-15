@@ -1,4 +1,18 @@
+.section-title {
+    margin-left: 0!important;
+    font-weight: 700;
+    
+}
 .photos-title {
-    font-weight: 300;
-    font-family: "Kanit";
+    z-index: 1;
+}
+.photos-title::after {
+  content : "";
+  position : absolute;
+  width : 13rem;
+  height : 11px;
+  left: 0;
+  background-color: darkcyan;
+  bottom: 6px;
+  z-index: -1;
 }
