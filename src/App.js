@@ -5,6 +5,7 @@ import { Bio } from "./components/Bio/Bio";
 import { Photos } from "./components/Photos/Photos";
 import { Performances } from "./components/Performances/Performances";
 import { Contact } from "./components/Contact/Contact";
+import { Videos } from "./components/Videos/Videos";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </div>
       <Bio />
       <Photos />
+      <Videos />
       <Performances />
       <Contact />
     </div>

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./Photos.css";
-const photos1 = require("../../assets/compressed/photos1.jpg");
-const photos2 = require("../../assets/compressed/photos2.jpg");
-const photos3 = require("../../assets/compressed/photos3.png");
-const photos4 = require("../../assets/compressed/photos4.jpg");
-const photos5 = require("../../assets/compressed/photos5.jpg");
-const photos6 = require("../../assets/compressed/photos6.png");
+const photos1 = require("../../assets/compressed/photos1.webp");
+const photos2 = require("../../assets/compressed/photos2.webp");
+const photos3 = require("../../assets/compressed/photos3.webp");
+const photos4 = require("../../assets/compressed/photos4.webp");
+const photos5 = require("../../assets/compressed/photos5.webp");
+const photos6 = require("../../assets/compressed/photos6.webp");
 const photosArray = [photos1, photos2, photos3, photos4, photos5, photos6];
 export const Photos = () => {
   const [width, setWidth] = useState(window.innerWidth);
@@ -17,14 +17,14 @@ export const Photos = () => {
       id="photos"
       className="w-full bg-slate-700 pt-6 md:pt-10 flex flex-col items-center"
     >
-      <h2 className="w-1/12 self-start section-title photos-title relative left-4 md:left-[230px] xl:left-[340px] text-slate-200 text-5xl mb-10">
+      <h2 className="w-1/12 self-start section-title photos-title relative left-4 md:left-[230px] xl:left-[340px] text-slate-200 text-5xl mt-4 mb-10">
         PHOTOS
       </h2>
       {/* Switch to carousel instead of grid if screen is small */}
       {width < 750 ? (
         <div
           id="carouselControls"
-          className="carousel slide relative"
+          className="carousel slide relative w-full"
           data-bs-ride="carousel"
         >
           <div className="carousel-inner relative w-full overflow-hidden">
@@ -61,6 +61,7 @@ export const Photos = () => {
             className="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
             type="button"
             data-bs-target="#carouselControls"
+            data-bs-interval="false"
             data-bs-slide="next"
           >
             <span
@@ -71,7 +72,7 @@ export const Photos = () => {
           </button>
         </div>
       ) : (
-        <div className="grid md:grid-cols-8 lg:grid-cols-12 w-full md:w-11/12 xl:w-3/4 gap-1 md:gap-2 md:grid-rows-3 lg:grid-rows-2 md:pb-20">
+        <div className="grid md:grid-cols-8 lg:grid-cols-12 w-full md:w-11/12 xl:w-11/12 2xl:w-3/4 gap-1 md:gap-2 md:grid-rows-3 lg:grid-rows-2 md:pb-20">
           <img
             className="col-start-1 md:col-end-5 lg:col-end-5"
             src={photos1}

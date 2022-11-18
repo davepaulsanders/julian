@@ -1,7 +1,7 @@
 .performances-title::after {
   content : "";
   position : absolute;
-  width : 24rem;
+  width : 22rem;
   height : 11px;
   left: 0;
   background-color: #cbcbcb;

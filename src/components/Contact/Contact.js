@@ -26,7 +26,7 @@ export const Contact = () => {
       className="contact-section w-full flex flex-col items-center py-6 md:py-10 bg-slate-700"
     >
       <div className="w-full md:w-8/12 flex flex-col items-center">
-        <h2 className="section-title contact-title text-slate-200 text-5xl pb-10 pl-4 self-start relative">
+        <h2 className="section-title contact-title text-slate-200 text-5xl pb-10 mt-4 pl-4 self-start relative">
           CONTACT
         </h2>
         <form

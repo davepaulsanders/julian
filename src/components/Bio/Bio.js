@@ -1,8 +1,8 @@
 import React from "react";
 import "./Bio.css";
-const bio = require("../../assets/compressed/bio.jpg");
-const bio2 = require("../../assets/compressed/bio2.jpg");
-const bio3 = require("../../assets/compressed/bio3.jpg");
+const bio = require("../../assets/compressed/bio.webp");
+const bio2 = require("../../assets/compressed/bio2.webp");
+const bio3 = require("../../assets/compressed/bio3.webp");
 
 export const Bio = () => {
   return (

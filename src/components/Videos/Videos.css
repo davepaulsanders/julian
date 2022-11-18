@@ -1,0 +1,13 @@
+.videos-title {
+    z-index: 1;
+}
+.videos-title::after {
+  content : "";
+  position : absolute;
+  width : 12rem;
+  height : 11px;
+  left: 0;
+  background-color: #cbcbcb;
+  bottom: 6px;
+  z-index: -1;
+}
