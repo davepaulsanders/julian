@@ -17,7 +17,7 @@ export const Photos = () => {
       id="photos"
       className="w-full bg-slate-700 pt-6 md:pt-10 flex flex-col items-center"
     >
-      <h2 className="w-1/12 self-start section-title photos-title relative left-4 md:left-[230px] xl:left-[340px] text-slate-200 text-5xl mt-4 mb-10">
+      <h2 className="w-1/12 self-start section-title photos-title relative left-4 md:left-[230px] 2xl:left-[340px] text-slate-200 text-5xl mt-4 mb-10">
         PHOTOS
       </h2>
       {/* Switch to carousel instead of grid if screen is small */}

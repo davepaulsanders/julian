@@ -16,8 +16,8 @@ function App() {
       </div>
       <Bio />
       <Photos />
-      <Videos />
       <Performances />
+      <Videos />
       <Contact />
     </div>
   );

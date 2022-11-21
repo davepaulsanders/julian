@@ -13,9 +13,9 @@ export const Videos = () => {
   return (
     <div
       id="videos"
-      className="w-full pt-6 md:pt-10 pb-20 flex flex-col items-center"
+      className="w-full pt-6 md:pt-10 pb-6 bg-slate-700 flex flex-col items-center"
     >
-      <h2 className="w-1/12 self-start section-title relative videos-title left-4 md:left-[230px] xl:left-[340px] text-5xl mt-4 mb-10">
+      <h2 className="w-1/12 self-start text-slate-200 section-title relative videos-title left-4 md:left-[230px] 2xl:left-[340px] text-5xl mt-4 mb-10">
         VIDEOS
       </h2>
       {/* Switch to carousel instead of grid if screen is small */}
