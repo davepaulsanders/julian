@@ -44,6 +44,5 @@
 @media only screen and (min-width: 800px) {
   .app-container {
     background-position: top 0px left 0px;
-    /* background-attachment: fixed; */
   }
 }

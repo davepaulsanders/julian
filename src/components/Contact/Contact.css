@@ -3,10 +3,10 @@
 }
 
 .contact-title::after {
-  content : "";
-  position : absolute;
-  width : 105%;
-  height : 11px;
+  content: "";
+  position: absolute;
+  width: 105%;
+  height: 11px;
   left: 15px;
   background-color: darkcyan;
   z-index: -1;
