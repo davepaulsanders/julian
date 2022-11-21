@@ -6,14 +6,17 @@ const bio3 = require("../../assets/compressed/bio3.webp");
 
 export const Bio = () => {
   return (
-    <div id="bio" className="p-0 md:p-10 w-full flex justify-center">
+    <div
+      id="bio"
+      className="p-0 md:p-10 w-full flex flex-column justify-center"
+    >
       <div className="bio-container w-full lg:w-11/12 2xl:w-9/12 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* LEFT COLUMN */}
-        <div>
-          <p className="bioPara">
+        <div className="flex flex-col items-center justify-center">
+          <p className="bioPara sm:p-2">
             <span className="name-span text-2xl font-bold mr-1">
               Julian Berkowitz
-            </span>{" "}
+            </span>
             is a drummer and educator residing in Washington, DC. Rooted in the
             deep tradition of American jazz, fusion, funk, and the rhythms of
             Brazil, Julian has quickly become one of the DC area’s most
@@ -26,8 +29,8 @@ export const Bio = () => {
             drums and became his first drum instructor, introducing him to funk
             and jazz music for the first time.
           </p>
-          <img className="bioImage2" src={bio2} alt="Julian Berkowitz" />
-          <p className="bioPara md:col-span-2 justify-self-stretch">
+          <img className="bioImage" src={bio2} alt="Julian Berkowitz" />
+          <p className="bioPara md:col-span-2 justify-self-stretch sm:p-2">
             Julian has performed and/or recorded with musicians such as Benny
             Benack III, Kris Funn, Chuck Redd, Michael Bowie, Corcoran Holt,
             Mike Pope, Bill Heid, Tedd Baker, Herman Burney, Thad Wilson, Herb
@@ -36,7 +39,7 @@ export const Bio = () => {
             tours and accompanied smooth Latin jazz artist Debora Galan on her
             2019 East Coast tour.
           </p>
-          <p className="bioPara">
+          <p className="bioPara sm:p-2">
             As a bandleader, Julian frequently leads his own groups in trio,
             quartet, and quintet configurations at various music venues in the
             DMV area. Currently, Julian has a weekly Friday night residency with
@@ -48,9 +51,9 @@ export const Bio = () => {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div>
-          <img className="bioImage mb-6" src={bio} alt="Julian Berkowitz" />
-          <p className="bioPara para2">
+        <div className="flex flex-col items-center justify-center">
+          <img className="bioImage2 mb-6" src={bio} alt="Julian Berkowitz" />
+          <p className="bioPara para2 sm:p-2">
             Upon moving to Washington, DC in 2013 to attend The George
             Washington University, Julian was fortunate to study jazz with
             virtuoso Brazilian drummer Alejandro Lucini. Lucini/’s mentorship
@@ -58,7 +61,7 @@ export const Bio = () => {
             and Brazilian/Latin jazz spheres. Julian graduated from GWU in 2017
             and began to explore the D.C. jazz scene.
           </p>
-          <p className="bioPara">
+          <p className="bioPara sm:p-2">
             Julian has performed at a number of venues in the DC metro area and
             beyond, including Blues Alley, Westminster Jazz Night in DC, Mr.
             Henry’s, Sharp 9 Gallery, Rams Head on Stage, Alice’s Jazz and

@@ -72,34 +72,34 @@ export const Photos = () => {
           </button>
         </div>
       ) : (
-        <div className="grid md:grid-cols-8 lg:grid-cols-12 w-full md:w-11/12 xl:w-11/12 2xl:w-3/4 gap-1 md:gap-2 md:grid-rows-3 lg:grid-rows-2 md:pb-20">
+        <div className="grid md:grid-cols-8 lg:grid-cols-12 w-full md:w-11/12 xl:w-11/12 2xl:w-3/4 gap-1 md:gap-2 md:grid-rows-3 lg:grid-rows-2 md:pb-20 justify-items-center">
           <img
-            className="col-start-1 md:col-end-5 lg:col-end-5"
+            className="photo col-start-1 md:col-end-5 lg:col-end-5"
             src={photos1}
             alt="Julian Berkowitz"
           />
           <img
-            className="md:col-start-5 md:col-end-9"
+            className="photo md:col-start-5 md:col-end-9"
             src={photos4}
             alt="Julian Berkowitz"
           />
           <img
-            className="md:col-start-1 md:row-start-2 md:col-end-5 lg:row-start-1 lg:col-start-9 lg:col-end-13"
+            className="photo md:col-start-1 md:row-start-2 md:col-end-5 lg:row-start-1 lg:col-start-9 lg:col-end-13"
             src={photos2}
             alt="Julian Berkowitz"
           />
           <img
-            className="md:col-start-5 md:row-start-2 md:col-end-9"
+            className="photo md:col-start-5 md:row-start-2 md:col-end-9"
             src={photos3}
             alt="Julian Berkowitz"
           />
           <img
-            className="md:col-start-1 md:row-start-3 md:col-end-5 lg:row-start-2"
+            className="photo md:col-start-1 md:row-start-3 md:col-end-5 lg:row-start-2"
             src={photos5}
             alt="Julian Berkowitz"
           />
           <img
-            className="md:col-start-5 md:row-start-3 md:col-end-9 lg:row-start-2 lg:col-start-9 lg:col-end-13"
+            className="photo md:col-start-5 md:row-start-3 md:col-end-9 lg:row-start-2 lg:col-start-9 lg:col-end-13"
             src={photos6}
             alt="Julian Berkowitz"
           />

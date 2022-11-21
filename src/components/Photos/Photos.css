@@ -16,3 +16,10 @@
   bottom: 6px;
   z-index: -1;
 }
+
+@media only screen and (max-width: 800px) {
+
+.photo {
+  max-width: 600px;
+}
+}
