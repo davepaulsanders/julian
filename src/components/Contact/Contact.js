@@ -1,23 +1,23 @@
 import React, { useRef } from "react";
 import "./Contact.css";
 import emailjs from "@emailjs/browser";
-import { serviceKey, publicKey } from "../../keys";
+//import { serviceKey, publicKey } from "../../keys";
 export const Contact = () => {
   const form = useRef();
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(serviceKey, "template_upsya8q", form.current, publicKey)
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    // emailjs
+    //   .sendForm(serviceKey, "template_upsya8q", form.current, publicKey)
+    //   .then(
+    //     (result) => {
+    //       console.log(result.text);
+    //     },
+    //     (error) => {
+    //       console.log(error.text);
+    //     }
+    //   );
   };
 
   return (
