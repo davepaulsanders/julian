@@ -27,7 +27,7 @@ export const Header = () => {
   const toggleMenu = (e) => {
     e.preventDefault();
     // query selector for nav links container
-    const linkContainer = document.querySelector(".link-container");
+    const linkContainer = document.querySelector("ul");
     if (linkContainer.classList.contains("open")) {
       closeMenuAnimation();
       linkContainer.classList.remove("open");
@@ -40,7 +40,7 @@ export const Header = () => {
 
   window.addEventListener("resize", () => {
     // query selector for nav links container
-    const linkContainer = document.querySelector(".link-container");
+    const linkContainer = document.querySelector("ul");
     if (linkContainer.classList.contains("open")) {
       linkContainer.classList.remove("open");
       document.querySelector(".bar-top").style.transform = "";
@@ -52,36 +52,32 @@ export const Header = () => {
   });
 
   return (
-    <div>
-      <nav className="bg-transparent flex justify-between items-center">
-        <h1 className="title overflow-hidden bg-transparent text-white text-2xl xl:text-5xl 2xl:text-6xl lg:ml-14">
-          <a href="/">JULIAN BERKOWITZ</a>
-        </h1>
-        <div className="hamburger-menu" onClick={toggleMenu}>
-          <div className="bar-top"></div>
-          <div className="bar-middle"></div>
-          <div className="bar-bottom"></div>
-        </div>
-        <div className="mr-10 link-container flex justify-center items-center">
-          <ul className="text-white flex">
-            <a className="link" href="#bio">
-              <li>BIO</li>
-            </a>
-            <a className="link" href="#photos">
-              <li>PHOTOS</li>
-            </a>
-            <a className="link" href="#videos">
-              <li>VIDEOS</li>
-            </a>
-            <a className="link" href="#performances">
-              <li>PERFORMANCES</li>
-            </a>
-            <a className="link" href="#contact">
-              <li>CONTACT</li>
-            </a>
-          </ul>
-        </div>
-      </nav>
-    </div>
+    <nav className="bg-black w-full flex justify-between items-center">
+      <h1 className="title overflow-hidden bg-transparent text-white text-2xl xl:text-5xl 2xl:text-6xl lg:ml-14">
+        <a href="/">JULIAN BERKOWITZ</a>
+      </h1>
+      <div className="hamburger-menu" onClick={toggleMenu}>
+        <div className="bar-top"></div>
+        <div className="bar-middle"></div>
+        <div className="bar-bottom"></div>
+      </div>
+      <ul className="text-white flex">
+        <a className="link" href="/bio">
+          <li>BIO</li>
+        </a>
+        <a className="link" href="/photos">
+          <li>PHOTOS</li>
+        </a>
+        <a className="link" href="/videos">
+          <li>VIDEOS</li>
+        </a>
+        <a className="link" href="/performances">
+          <li>PERFORMANCES</li>
+        </a>
+        <a className="link" href="/contact">
+          <li>CONTACT</li>
+        </a>
+      </ul>
+    </nav>
   );
 };

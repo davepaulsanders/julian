@@ -1,13 +1,37 @@
 .home {
-    height: 100vh;
+height: 100vh;
+background-image: url("../../assets/compressed/home.webp");
+  background-size: cover;
+  background-attachment: scroll;
+  background-repeat: no-repeat;
+  z-index: -1;
+  background-position: 0 65px;
 }
 
 .video {
     width: 300px;
+    height: 300px;
+    position: relative;
+    top: 290px;
 }
 
 @media only screen and (min-width: 1400px) {
     .video {
         width: 400px;
+        height: 400px;
     }
+}
+
+@media only screen and (max-width: 700px) {
+    .home {
+        background-position: -250px 60px;
+    }
+}
+
+@media only screen and (min-width: 700px){
+
+    .video {
+        left: 300px
+    }
+    
 }

@@ -13,8 +13,9 @@
     margin-top: 1rem;
 }
 
-.bioImage {
+.bioImage, .bioImage2, .bioImage3 {
     justify-items: center!important;
+    margin: 0;
 }
 @media only screen and (min-width: 700px) {
     

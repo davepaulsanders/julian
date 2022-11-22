@@ -52,7 +52,7 @@ export const Bio = () => {
 
         {/* RIGHT COLUMN */}
         <div className="flex flex-col items-center justify-center">
-          <img className="bioImage2 mb-6" src={bio} alt="Julian Berkowitz" />
+          <img className="bioImage2" src={bio} alt="Julian Berkowitz" />
           <p className="bioPara para2 sm:p-2">
             Upon moving to Washington, DC in 2013 to attend The George
             Washington University, Julian was fortunate to study jazz with
