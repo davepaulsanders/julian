@@ -10,8 +10,8 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App flex flex-col items-center">
+      <Router>
       <Header />
-      <Router basename={"https://helpful-capybara-215f21.netlify.app"}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bio" element={<Bio />} />

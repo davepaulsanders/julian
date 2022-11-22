@@ -1,6 +1,6 @@
 import React from "react";
 import "./Header.css";
-
+import { Link } from "react-router-dom";
 export const Header = () => {
   window.addEventListener("scroll", () => {
     const linkContainer = document.querySelector(".link-container");
@@ -54,7 +54,9 @@ export const Header = () => {
   return (
     <nav className="w-full flex justify-between items-center">
       <h1 className="title overflow-hidden bg-transparent text-white text-2xl xl:text-5xl 2xl:text-6xl lg:ml-14">
-        <a href="/" className="text-2xl xl:text-5xl">JULIAN BERKOWITZ</a>
+        <Link to="/" className="text-2xl xl:text-5xl">
+          JULIAN BERKOWITZ
+        </Link>
       </h1>
       <div className="hamburger-menu" onClick={toggleMenu}>
         <div className="bar-top"></div>
@@ -62,21 +64,25 @@ export const Header = () => {
         <div className="bar-bottom"></div>
       </div>
       <ul className="text-white flex text-lg xl:text-md 2xl:text-lg">
-        <a className="link" href="/bio">
+        <Link className="link" to="/bio">
           <li>BIO</li>
-        </a>
-        <a className="link" href="/photos">
+        </Link>
+
+        <Link className="link" to="/photos">
           <li>PHOTOS</li>
-        </a>
-        <a className="link" href="/videos">
+        </Link>
+
+        <Link className="link" to="/videos">
           <li>VIDEOS</li>
-        </a>
-        <a className="link" href="/performances">
+        </Link>
+
+        <Link className="link" to="/performances">
           <li>PERFORMANCES</li>
-        </a>
-        <a className="link" href="/contact">
+        </Link>
+
+        <Link className="link" to="/contact">
           <li>CONTACT</li>
-        </a>
+        </Link>
       </ul>
     </nav>
   );
