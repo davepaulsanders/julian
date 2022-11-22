@@ -11,7 +11,7 @@ function App() {
   return (
     <div className="App flex flex-col items-center">
       <Header />
-      <Router>
+      <Router basename={"https://helpful-capybara-215f21.netlify.app"}>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bio" element={<Bio />} />
