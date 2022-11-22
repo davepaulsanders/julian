@@ -15,7 +15,7 @@ export const Photos = () => {
   return (
     <div
       id="photos"
-      className="w-full h-screen bg-slate-700 pt-6 md:pt-10 flex flex-col items-center"
+      className="w-full min-h-screen bg-slate-700 pt-6 md:pt-10 flex flex-col items-center"
     >
       <h2 className="w-1/12 self-start section-title photos-title relative left-4 md:left-[230px] 2xl:left-[340px] text-slate-200 text-5xl mt-4 mb-10">
         PHOTOS

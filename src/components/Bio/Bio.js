@@ -8,12 +8,13 @@ export const Bio = () => {
   return (
     <div
       id="bio"
-      className="p-0 md:p-10 w-full flex flex-column justify-center"
+      className="px-2 pt-6 md:pt-10 w-full flex flex-col items-center justify-center"
     >
+      <h2 className="w-1/12 self-start section-title bio-title text-5xl mt-4 mb-10 left-4 md:left-[230px] 2xl:left-[340px] text-left relative">BIO</h2>
       <div className="bio-container w-full lg:w-11/12 2xl:w-9/12 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* LEFT COLUMN */}
-        <div className="flex flex-col items-center justify-center">
-          <p className="bioPara sm:p-2">
+        <div className="flex flex-col items-stretch">
+          <p className="bioPara sm:py-2">
             <span className="name-span text-2xl font-bold mr-1">
               Julian Berkowitz
             </span>
@@ -51,7 +52,7 @@ export const Bio = () => {
         </div>
 
         {/* RIGHT COLUMN */}
-        <div className="flex flex-col items-center justify-center">
+        <div className="flex flex-col items-center justify-start">
           <img className="bioImage2" src={bio} alt="Julian Berkowitz" />
           <p className="bioPara para2 sm:p-2">
             Upon moving to Washington, DC in 2013 to attend The George
