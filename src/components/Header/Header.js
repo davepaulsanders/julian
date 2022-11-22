@@ -1,7 +1,9 @@
 import React from "react";
 import "./Header.css";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
 export const Header = () => {
+  const navigate = useNavigate();
   window.addEventListener("scroll", () => {
     const linkContainer = document.querySelector(".link-container");
     if (linkContainer.classList.contains("open")) {
@@ -50,13 +52,18 @@ export const Header = () => {
     }
     linkContainer.classList.remove("nav-transition");
   });
-
+  const handleLinkClick = (e) => {
+    e.preventDefault();
+    const targetId = e.target.closest("button").getAttribute("id");
+    toggleMenu(e);
+    navigate(`/${targetId}`);
+  };
   return (
     <nav className="w-full flex justify-between items-center">
       <h1 className="title overflow-hidden bg-transparent text-white text-2xl xl:text-5xl 2xl:text-6xl lg:ml-14">
-        <Link to="/" className="text-2xl xl:text-5xl">
+        <a href="/" className="text-2xl xl:text-5xl">
           JULIAN BERKOWITZ
-        </Link>
+        </a>
       </h1>
       <div className="hamburger-menu" onClick={toggleMenu}>
         <div className="bar-top"></div>
@@ -64,25 +71,29 @@ export const Header = () => {
         <div className="bar-bottom"></div>
       </div>
       <ul className="text-white flex text-lg xl:text-md 2xl:text-lg">
-        <Link onClick={toggleMenu} className="link" to="/bio">
+        <button id="bio" onClick={handleLinkClick} className="link">
           <li>BIO</li>
-        </Link>
+        </button>
 
-        <Link onClick={toggleMenu} className="link" to="/photos">
+        <button id="photos" onClick={handleLinkClick} className="link">
           <li>PHOTOS</li>
-        </Link>
+        </button>
 
-        <Link onClick={toggleMenu} className="link" to="/videos">
+        <button id="videos" onClick={handleLinkClick} className="link">
           <li>VIDEOS</li>
-        </Link>
+        </button>
 
-        <Link onClick={toggleMenu} className="link" to="/performances">
+        <button
+          id="performances"
+          onClick={handleLinkClick}
+          className="link"
+        >
           <li>PERFORMANCES</li>
-        </Link>
+        </button>
 
-        <Link onClick={toggleMenu} className="link" to="/contact">
+        <button id="contact" onClick={handleLinkClick} className="link">
           <li>CONTACT</li>
-        </Link>
+        </button>
       </ul>
     </nav>
   );
