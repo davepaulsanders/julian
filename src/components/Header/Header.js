@@ -64,23 +64,23 @@ export const Header = () => {
         <div className="bar-bottom"></div>
       </div>
       <ul className="text-white flex text-lg xl:text-md 2xl:text-lg">
-        <Link className="link" to="/bio">
+        <Link onClick={toggleMenu} className="link" to="/bio">
           <li>BIO</li>
         </Link>
 
-        <Link className="link" to="/photos">
+        <Link onClick={toggleMenu} className="link" to="/photos">
           <li>PHOTOS</li>
         </Link>
 
-        <Link className="link" to="/videos">
+        <Link onClick={toggleMenu} className="link" to="/videos">
           <li>VIDEOS</li>
         </Link>
 
-        <Link className="link" to="/performances">
+        <Link onClick={toggleMenu} className="link" to="/performances">
           <li>PERFORMANCES</li>
         </Link>
 
-        <Link className="link" to="/contact">
+        <Link onClick={toggleMenu} className="link" to="/contact">
           <li>CONTACT</li>
         </Link>
       </ul>
