@@ -52,16 +52,16 @@ export const Header = () => {
   });
 
   return (
-    <nav className="bg-black w-full flex justify-between items-center">
+    <nav className="w-full flex justify-between items-center">
       <h1 className="title overflow-hidden bg-transparent text-white text-2xl xl:text-5xl 2xl:text-6xl lg:ml-14">
-        <a href="/">JULIAN BERKOWITZ</a>
+        <a href="/" className="text-2xl xl:text-5xl">JULIAN BERKOWITZ</a>
       </h1>
       <div className="hamburger-menu" onClick={toggleMenu}>
         <div className="bar-top"></div>
         <div className="bar-middle"></div>
         <div className="bar-bottom"></div>
       </div>
-      <ul className="text-white flex">
+      <ul className="text-white flex text-lg xl:text-md 2xl:text-lg">
         <a className="link" href="/bio">
           <li>BIO</li>
         </a>

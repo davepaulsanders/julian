@@ -1,9 +1,10 @@
 nav {
   height: 4rem;
+  background-color: #121212;
 }
 .title {
-  font-family: "Kanit";
-  font-weight: 500;
+  font-family: "Exo";
+  font-weight: 300;
   letter-spacing: 1px;
   margin-left: 0.75rem;
   
@@ -15,7 +16,7 @@ nav {
 ul {
   flex-direction: column;
   position: fixed;
-  background-color: black;
+  background-color: #121212;
   top: 4rem;
   left: 100%;
   width: 100%;
@@ -23,6 +24,7 @@ ul {
   align-self: start;
   padding-top: 2rem;
   z-index: 3;
+  
 }
 
 .open {
@@ -31,10 +33,11 @@ ul {
 .link {
     margin: 1rem;
     letter-spacing: 2px;
-    font-weight: 700;
-    font-size: 1.25rem;
-    transition: opacity 0.3s ease-in-out;
+    font-weight: 500;
     
+    transition: opacity 0.3s ease-in-out;
+    font-family: "Exo";
+  font-weight: 400;
 }
 
 .link:hover {
