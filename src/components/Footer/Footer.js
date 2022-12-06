@@ -25,7 +25,7 @@ export const Footer = () => {
         className="text-white text-xl md:text-sm"
         href="https://davepaulsanders.github.io/react-portfolio/"
       >
-        Site by Date Sanders
+        Site by Dave Sanders
       </a>
     </div>
   );
