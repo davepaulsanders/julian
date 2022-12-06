@@ -24,7 +24,7 @@ export const Photos = () => {
       {width < 750 ? (
         <div
           id="carouselControls"
-          className="carousel slide relative w-full"
+          className="carousel slide relative w-11/12"
           data-bs-ride="carousel"
         >
           <div className="carousel-inner relative w-full overflow-hidden">
