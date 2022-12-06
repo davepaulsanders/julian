@@ -12,7 +12,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 function App() {
   return (
     <div className="App flex flex-col items-center justify-between min-h-screen">
-      <Router>
+      <Router basename="/">
         <Header />
 
         <Routes>
