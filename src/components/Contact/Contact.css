@@ -1,7 +1,13 @@
 .contact-title {
     z-index: 2!important;
 }
-
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  
+}
 .contact-title::after {
   content: "";
   position: absolute;
