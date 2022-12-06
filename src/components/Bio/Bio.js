@@ -8,9 +8,11 @@ export const Bio = () => {
   return (
     <div
       id="bio"
-      className="px-2 pt-6 md:pt-10 w-full flex flex-col items-center justify-center"
+      className="px-2 pt-6 pb-6 md:pt-10 w-full flex flex-col items-center justify-center"
     >
-      <h2 className="w-1/12 self-start section-title bio-title text-5xl mt-4 mb-10 left-4 md:left-[230px] 2xl:left-[340px] text-left relative">BIO</h2>
+      <h2 className="w-1/12 self-start section-title bio-title text-5xl mt-4 sm:mb-10 left-4 md:left-[230px] 2xl:left-[340px] text-left relative">
+        BIO
+      </h2>
       <div className="bio-container w-full lg:w-11/12 2xl:w-9/12 grid grid-cols-1 md:grid-cols-2 gap-6">
         {/* LEFT COLUMN */}
         <div className="flex flex-col items-stretch">

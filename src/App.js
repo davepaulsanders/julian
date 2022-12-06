@@ -6,12 +6,14 @@ import { Photos } from "./components/Photos/Photos";
 import { Performances } from "./components/Performances/Performances";
 import { Contact } from "./components/Contact/Contact";
 import { Videos } from "./components/Videos/Videos";
+import { Footer } from "./components/Footer/Footer";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 function App() {
   return (
-    <div className="App flex flex-col items-center">
+    <div className="App flex flex-col items-center  ">
       <Router>
-      <Header />
+        <Header />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bio" element={<Bio />} />
@@ -20,6 +22,7 @@ function App() {
           <Route path="/photos" element={<Photos />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
+        <Footer />
       </Router>
     </div>
   );
