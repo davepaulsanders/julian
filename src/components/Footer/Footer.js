@@ -1,10 +1,11 @@
 import React from "react";
+import "./Footer.css";
 const instagram = require("../../assets/compressed/instagram.png");
 const facebook = require("../../assets/compressed/facebook.png");
 
 export const Footer = () => {
   return (
-    <div className="w-full bg-black h-[3rem] flex items-center justify-center md:justify-end relative md:pr-4">
+    <footer className="footer w-full h-[3rem] flex items-center justify-center md:justify-end relative md:pr-4">
       <div className="flex items-center mr-4">
         <a href="https://www.instagram.com/julianberkowitzdrums/">
           <img
@@ -27,6 +28,6 @@ export const Footer = () => {
       >
         Site by Dave Sanders
       </a>
-    </div>
+    </footer>
   );
 };
