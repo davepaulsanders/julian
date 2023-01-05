@@ -7,7 +7,7 @@ export const Contact = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
+    
     // emailjs
     //   .sendForm(serviceKey, "template_upsya8q", form.current, publicKey)
     //   .then(
