@@ -1,0 +1,11 @@
+version: "1.0"
+services:
+  client:
+    image: client-prod-i
+    build:
+      dockerfile: Dockerfile.prod
+    container_name: client-prod-client
+    ports:
+      - "8080:80"
+    environment:
+      - NODE_ENV=production

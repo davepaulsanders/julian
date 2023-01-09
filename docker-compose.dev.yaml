@@ -1,0 +1,18 @@
+version: "1.0"
+services:
+  client:
+    image: client-dev-i
+    build:
+      dockerfile: Dockerfile.dev
+    container_name: client-dev-client
+    volumes:
+    # this maps the host volume location to the client folder in the container, so that if the host changes, so does the container
+      - ./client:/client
+      - node_modules:/client/node_modules/
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+# setting node volumes like this stops them from being overwritten by the host machine
+volumes:
+  node_modules:

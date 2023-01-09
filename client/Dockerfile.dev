@@ -1,0 +1,14 @@
+# creating a layer
+FROM node:alpine AS builder
+
+WORKDIR /client
+
+# copy dependencies list and install
+COPY package.json .
+
+RUN npm i
+# copy app files
+COPY . .
+
+
+CMD  ["npm", "start"]

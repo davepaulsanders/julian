@@ -83,11 +83,7 @@ export const Header = () => {
           <li>VIDEOS</li>
         </button>
 
-        <button
-          id="performances"
-          onClick={handleLinkClick}
-          className="link"
-        >
+        <button id="performances" onClick={handleLinkClick} className="link">
           <li>PERFORMANCES</li>
         </button>
 
